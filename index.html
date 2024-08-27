@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/icono.png" type="image/x-icon" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <main>
+      <!-- Primera sección -->
+      <section class="input_text_container">
+        <textarea
+          class="input_textarea"
+          placeholder="Ingresar texto aquí"
+        ></textarea>
+        <div class="input_alert">
+          <p class="input_alert_p">
+            <span class="input_alert_icon"></span>Solo letras minusculas y sin
+            acentos
+          </p>
+        </div>
+        <div class="btn_container">
+          <button id="btn-encriptar" class="btn">encriptar</button>
+          <button id="btn-desencriptar" class="btn">desencriptar</button>
+        </div>
+      </section>
+      <!-- FIN Primera sección -->
+
+      <!-- Segunda sección -->
+      <section class="output_text_container">
+        <textarea
+          class="output_textarea"
+          placeholder="Texto encriptado aquí"
+          readonly
+        ></textarea>
+        <button id="btn-copiar" class="btn">copiar</button>
+      </section>
+      <!-- FIN Segunda sección -->
+    </main>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
